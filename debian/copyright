@@ -1,0 +1,28 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Xalan J
+Source: http://svn.apache.org/repos/asf/xalan/java/trunk
+
+Files: *
+Copyright: 2000-2014, The Apache Software Foundation
+License: Apache-2.0
+
+Files: debian/*
+Copyright: 2001-2002, Ola Lundqvist <opal@debian.org>
+           2001, Max Kellermann <max.kellermann@epost.de>
+           2002-2004, Stefan Gybas <sgybas@debian.org>
+           2005-2006, Wolfgang Baer <WBaer@gmx.de>
+           2005-2007, Arnaud Vandyck <avdyk@debian.org>
+           2005, Jeroen van Wolffelaar <jeroen@wolffelaar.nl>
+           2006, Marcus Better <marcus@better.se>
+           2007, Matthias Klose <doko@debian.org>
+           2008, Michael Koch <konqueror@gmx.de>
+           2009, Ludovic Claude <ludovic.claude@laposte.net>
+           2009-2011, Torsten Werner <twerner@debian.org>
+           2011, Jakub Adam <jakub.adam@ktknet.cz>
+           2013, tony mancill <tmancill@debian.org>
+           2014-2017, Emmanuel Bourg <ebourg@apache.org>
+License: Apache-2.0
+
+License: Apache-2.0
+ On Debian systems, the full text of the Apache-2.0 license
+ can be found in the file '/usr/share/common-licenses/Apache-2.0'

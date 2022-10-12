@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+%:
+	dh $@ --with maven-repo-helper
+
+override_dh_auto_build:
+	dh_auto_build -- jar xsltc.unbundledjar javadocs docs
+
+override_dh_auto_clean:
+	dh_auto_clean -- clean xsltc.clean
+
+get-orig-source:
+	-uscan --download-current-version --force-download --rename --repack
+
+get-orig-pom:
+	wget -O debian/xalan.pom      https://repo1.maven.org/maven2/xalan/xalan/$(DEB_VERSION_UPSTREAM)/xalan-$(DEB_VERSION_UPSTREAM).pom
+	wget -O debian/serializer.pom https://repo1.maven.org/maven2/xalan/serializer/$(DEB_VERSION_UPSTREAM)/serializer-$(DEB_VERSION_UPSTREAM).pom

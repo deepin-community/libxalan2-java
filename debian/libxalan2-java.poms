@@ -1,0 +1,2 @@
+debian/xalan.pom      --no-parent --has-package-version --java-lib --artifact=build/xalan.jar --usj-name=xalan2
+debian/serializer.pom --no-parent --has-package-version --java-lib --artifact=build/serializer.jar
